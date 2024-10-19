@@ -1,0 +1,15 @@
+version: '1.0'
+
+# Services
+services:
+  # Client service and others services
+  client:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    container_name: frontend
+    # ports out:in
+    ports:
+      - "3003:3000"
+
